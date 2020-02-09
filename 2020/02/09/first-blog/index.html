@@ -7,15 +7,15 @@
   
   <title>first blog | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如何初始化github博客 安装npm 123npm i hexo-deployer-gitxcode-select --installnpm install hexo-cli -g  初始化博客   1234hexo initnpm installhexo ghexo s">
+  <meta name="description" content="如何初始化github博客1 . 安装npm 12xcode-select --installnpm install hexo-cli -g  2 . 初始化博客 1234hexo initnpm installhexo ghexo s  3 . 安装对应插件 12npm i hexo-deployer-git # 安装git同步插件  使用https同步 git config --global">
 <meta property="og:type" content="article">
 <meta property="og:title" content="first blog">
 <meta property="og:url" content="http://yoursite.com/2020/02/09/first-blog/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="如何初始化github博客 安装npm 123npm i hexo-deployer-gitxcode-select --installnpm install hexo-cli -g  初始化博客   1234hexo initnpm installhexo ghexo s">
+<meta property="og:description" content="如何初始化github博客1 . 安装npm 12xcode-select --installnpm install hexo-cli -g  2 . 初始化博客 1234hexo initnpm installhexo ghexo s  3 . 安装对应插件 12npm i hexo-deployer-git # 安装git同步插件  使用https同步 git config --global">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-09T15:51:38.000Z">
-<meta property="article:modified_time" content="2020-02-09T15:55:23.995Z">
+<meta property="article:modified_time" content="2020-02-09T16:05:36.711Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -89,19 +89,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="如何初始化github博客"><a href="#如何初始化github博客" class="headerlink" title="如何初始化github博客"></a>如何初始化github博客</h2><ol>
-<li><p>安装npm</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-deployer-git</span><br><span class="line">xcode-select --install</span><br><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化博客</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+        <h2 id="如何初始化github博客"><a href="#如何初始化github博客" class="headerlink" title="如何初始化github博客"></a>如何初始化github博客</h2><p>1 . 安装npm</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>2 . 初始化博客</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>3 . 安装对应插件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-deployer-git # 安装git同步插件  使用https同步 </span><br><span class="line">git config --global credential.helper store # 修改git配置 存储密码</span><br></pre></td></tr></table></figure>
+<p>修改配置文件</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span> <span class="comment"># https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">[branch]</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
+
+<p>4 . 编写博客</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 'tile'</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br><span class="line">hexo clean&amp;&amp;hexo deploy</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/09/first-blog/" data-id="ck6f7nhyk0000hio9bwfd12ue" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/09/first-blog/" data-id="ck6f7z10s0000yao9gf321k6z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
