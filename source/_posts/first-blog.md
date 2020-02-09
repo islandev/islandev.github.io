@@ -7,6 +7,7 @@ tags: hexo
 ## 如何初始化github博客
 
 1 . 安装npm
+
 ``` shell
 xcode-select --install
 npm install hexo-cli -g
