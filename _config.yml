@@ -102,4 +102,3 @@ deploy:
   type: git
   repo: https://github.com/islandev/islandev.github.io
   branch: gh-pages
-  token: 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
